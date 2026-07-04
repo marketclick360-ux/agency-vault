@@ -8,8 +8,8 @@ Read this before searching. One line per note: `[[path]] - what it holds`.
 
 ## clients/
 - [[clients/medicare-agency/_CLIENT]] - client card: internal Medicare lead-gen business (client #1)
-- [[clients/medicare-agency/facts]] - company facts, product surface, open questions
-- [[clients/medicare-agency/people]] - contacts (stub)
-- [[clients/medicare-agency/tone]] - voice rules (stub)
+- [[clients/medicare-agency/facts]] - company facts, canonical repo (medicare-leads-saas), quarterly goals
+- [[clients/medicare-agency/people]] - operator + role checklist for agents/vendors/compliance
+- [[clients/medicare-agency/tone]] - voice rules + CMS compliance hard checklist (gate for ALL public copy)
 - [[clients/medicare-agency/tools]] - stack, repos, credential locations
-- [[clients/medicare-agency/backlog]] - request log (empty)
+- [[clients/medicare-agency/backlog]] - request log (Google Ads campaign, Bubble verification, compliance audit)

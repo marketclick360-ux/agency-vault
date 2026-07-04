@@ -18,11 +18,13 @@ this client is the subject of the work.
 - **Tier:** internal (no retainer — dogfood client; run the full client process anyway)
 - **Main contact:** the operator (marketclick360@gmail.com)
 - **What we run for them:** Medicare lead generation + lead management —
+  **canonical SaaS: `medicare-leads-saas`** (Next.js 16 + Supabase, active),
   leads dashboard (`marketclick360` repo `app/`), landing page + lead-capture
-  backend (`medicare-landing-page`), lead-gen SaaS migration from Bubble
-  (`medicare-leads-saas`, `edlando-medicare-saas`), plan search tool
-  (`medicare-plan-search`)
-- **Current focus:** TBD — operator to confirm (candidates as of 2026-07-04:
-  finish the Bubble→Next.js SaaS migration; verify lead flow end-to-end)
-- **Landmines:** Medicare marketing is CMS-regulated — client-facing copy has
-  compliance constraints (confidence: medium, not yet documented here)
+  backend (`medicare-landing-page`), plan search (`medicare-plan-search`);
+  `edlando-medicare-saas` is an abandoned Feb-2026 scaffold
+- **Current focus (as of 2026-07-04):** build the Google Ads campaign;
+  verify lead intake end-to-end; settle Bubble's status (quarterly goals in
+  facts.md)
+- **Landmines:** CMS-regulated marketing — every public-facing draft must
+  pass the compliance hard checklist in tone.md; plan-specific details only
+  from licensed agents
