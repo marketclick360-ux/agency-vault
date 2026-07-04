@@ -32,10 +32,19 @@ provenance.
 ## Facts
 
 ### The business
-- Medicare lead-generation business run by the operator; "Janet" (Janet
-  Murillo) is associated with the Vercel account hosting the deployments
-  (as of 2026-07, Vercel bot comments on `marketclick360` PRs) and is the end
-  user of the Hermes bot and AgentOS (as of 2026-07-04, Hermes handoff doc).
+- **Business name: Edlando Insurance** — domains edlandoins.com and
+  edlando.com, Facebook page facebook.com/edlandoinsurance (as of 2022-01,
+  "Janeth M - Activos y Accesos" Drive doc from vendor Marketing Rockstars;
+  edlando.com confirmed current by ad-playbook URLs as of 2026-07-04).
+  This resolves the "edlando" question: the old repo was named after the
+  business.
+- Operator: Janet (Janet Murillo), bilingual (EN/ES) licensed agent —
+  contact 281-250-0687, marketclick360@gmail.com (as of 2022-01 Drive doc;
+  license lines/states to confirm). Licensed in FL/TX/OR per the
+  ad-playbook targeting sheet (as of 2026-07-04, confidence: medium).
+- Past vendor: Marketing Rockstars (Andrea Argüelles Barragán,
+  andy@marketing-rockstars.com) ran a Spanish life-insurance Facebook
+  campaign circa 2022-01 (source: same Drive doc).
 - Revenue model and unit economics: TBD — operator to supply.
 
 ### Canonical repo — RESOLVED 2026-07-04 (confidence: high)
@@ -58,6 +67,19 @@ provenance.
 ### Leads (as of 2026-07-04, operator)
 - **Lead source plan: Google Ads** (stated by operator 2026-07-04). A Google
   Ads marketing campaign is a requested build — see [[clients/medicare-agency/backlog]].
+- **An ad playbook already exists**: `medicare-leads-saas/docs/2-hands-build/ad-playbook.md`
+  ("Edlando Ad Playbook", as of 2026-07-04) — Meta (FB/IG)-first: launch
+  order (Spanish D-SNP El Paso + Hidalgo first, then T65 ES/PT/EN), full ad
+  copy, targeting, $20-30/day budgets, UTM-tagged links to edlando.com
+  landing pages, A/B headline switch, compliance notes. Google Ads is NOT
+  yet covered beyond "get Medicare advertiser certification before running
+  search ads."
+- **Conversion plumbing is already wired on both ends** (as of 2026-07-04):
+  SaaS `Analytics.tsx` accepts a Google Ads `AW-` tag via
+  `NEXT_PUBLIC_GTAG_ID` and `lib/track.ts` fires `generate_lead`; the
+  landing page captures GCLID + UTM, exposes `GOOGLE_ADS_ID` /
+  `GOOGLE_ADS_CONVERSION_LABEL` hooks, and fires conversions on
+  thank-you.html. Real IDs not yet plugged in (placeholders).
 - Current volume: UNKNOWN — do not estimate. Truth source when measuring:
   last 90 days of lead records grouped by source, campaign, created_at,
   status, converted.
@@ -76,6 +98,9 @@ and compliant senior-facing messaging. Concretely:
 - [ ] No public-facing Medicare copy makes unverifiable promises or misleading claims (audit pending)
 
 ## History
+- 2026-07-04 (later): "edlando" resolved to the business name Edlando
+  Insurance via 2022 Drive doc; existing Meta ad playbook and pre-wired
+  Google Ads conversion hooks discovered and documented.
 - 2026-07-04: Initial version had canonical repo TBD. Resolved same day to
   `medicare-leads-saas` after direct comparison of both repos; lead-source
   plan (Google Ads), quarterly definition of done, tone/compliance, and
