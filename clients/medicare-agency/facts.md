@@ -57,8 +57,9 @@ provenance.
 - **`edlando-medicare-saas` is an abandoned early scaffold** — three days of
   commits (2026-02-02 → 2026-02-04, landing page + BlazeSync intake + Cal
   booking), Next.js 14, no vercel.json, dormant for 5 months (confidence:
-  high). Meaning of "edlando": TBD — possibly a person/codename ("Ed Lando"?);
-  do not state as fact. Candidate action: archive the repo to remove ambiguity.
+  high). Meaning of "edlando": RESOLVED 2026-07-04 — the business name,
+  Edlando Insurance (see The business above). Candidate action: archive the
+  repo to remove ambiguity.
 - **Bubble migration status: UNKNOWN.** Both READMEs describe a "migration
   from Bubble." Assume Bubble may still serve real users until verified via:
   production domain DNS, Bubble app logs, Stripe/webhook destinations, form
